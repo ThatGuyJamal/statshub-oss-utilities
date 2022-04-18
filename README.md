@@ -4,3 +4,8 @@ To use it simply install the package using node from the github repository.
 
 Ex: `yarn add https://github.com/ThatGuyJamal/statshub-oss-utilities`
 
+This will install the package to your `package.json` as `@statistics-hub-oss/utilities`.
+
+Then just import and use the code! You can find the usable exports in the [index.js](./index.js) file.
+
+Typings are in the [bin](./bin/index.d.ts) file.
