@@ -1,12 +1,9 @@
 {
-  "exclude": [
-    "**/node_modules/**",
-    "./test/**",
-  ],
+  "exclude": ["**/node_modules/**", "./test/**"],
   "compilerOptions": {
     "target": "ESNext",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true ,
+    "emitDecoratorMetadata": true,
     "module": "commonjs",
     // Compile settings
     "rootDir": "./src",
@@ -24,7 +21,7 @@
     // Type checking
     "strict": true,
     "noImplicitAny": true,
-    "strictPropertyInitialization": true ,
+    "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "useUnknownInCatchVariables": true,
     "alwaysStrict": true,

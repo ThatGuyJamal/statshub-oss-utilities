@@ -1,10 +1,8 @@
 const { initializeTypeGooseConnection, GuildModelHandler } = require("../../out/index");
-const config = require("./test.json")
+const config = require("./test.json");
 
 async function run() {
-  await initializeTypeGooseConnection(
-    config.mongoUrl
-  ).then(() => {
+  await initializeTypeGooseConnection(config.mongoUrl).then(() => {
     console.log("Connected to MongoDB");
   });
 
@@ -16,7 +14,7 @@ async function run() {
   };
 
   // Deletes any doc if it exists
-  await test._model.deleteMany({})
+  await test._model.deleteMany({});
 
   // // Inserts a new doc
   let doc = await test._model.findByIdAndUpdate(
@@ -42,7 +40,6 @@ async function run() {
   );
 
   console.log(doc);
-
 }
 
 run();

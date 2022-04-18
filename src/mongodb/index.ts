@@ -2,7 +2,7 @@ import { connect, type ConnectOptions } from "mongoose";
 import { GuildModelHandler } from "./handler";
 import { GuildDocument, GuildDocumentModel, GuildSchema, GuildSchemaMemberType } from "./model";
 
-export { GuildDocument, GuildDocumentModel, GuildSchema, GuildSchemaMemberType, GuildModelHandler};
+export { GuildDocument, GuildDocumentModel, GuildSchema, GuildSchemaMemberType, GuildModelHandler };
 
 /**
  * Connect to the database.
@@ -16,4 +16,3 @@ export async function initializeTypeGooseConnection(url: string, options?: Conne
     console.error(err);
   }
 }
-
