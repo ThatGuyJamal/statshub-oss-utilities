@@ -1,12 +1,33 @@
 {
-  "extends": "./tsconfig.build.json",
   "compilerOptions": {
+    "target": "ESNext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true ,
+    "module": "commonjs",
+    // Compile settings
     "rootDir": "./src",
     "outDir": "./out",
-    "emitDeclarationOnly": true,
-    // "declarationDir": "./out",
     "outFile": "./bin/index.d.ts",
+    "removeComments": false,
     "sourceMap": true,
-    "removeComments": false
+    "resolveJsonModule": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "allowJs": true,
+    "checkJs": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    // Type checking
+    "strict": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": true ,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   }
 }
