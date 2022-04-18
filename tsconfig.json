@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./out",
+    "emitDeclarationOnly": true,
+    // "declarationDir": "./out",
+    "outFile": "./bin/index.d.ts",
+    "sourceMap": true,
+    "removeComments": false
+  }
+}

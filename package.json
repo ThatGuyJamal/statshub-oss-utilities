@@ -1,0 +1,24 @@
+{
+  "name": "@statistics-hub-oss/utilities",
+  "version": "0.1.0",
+  "description": "Utility modules for the bot.",
+  "main": "index.js",
+  "typings": "./bin/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -p tsconfig.json",
+    "check:format": "prettier --ignore-path .gitignore --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-hybrid-sharding": "^1.5.3",
+    "prettier": "^2.6.2",
+    "tedis": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "typescript": "^4.6.3"
+  }
+}
