@@ -1,4 +1,8 @@
 {
+  "exclude": [
+    "**/node_modules/**",
+    "./test/**",
+  ],
   "compilerOptions": {
     "target": "ESNext",
     "experimentalDecorators": true,
@@ -7,11 +11,11 @@
     // Compile settings
     "rootDir": "./src",
     "outDir": "./out",
-    "outFile": "./bin/index.d.ts",
     "removeComments": false,
     "sourceMap": true,
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "declaration": true,
     "allowJs": true,
     "checkJs": true,

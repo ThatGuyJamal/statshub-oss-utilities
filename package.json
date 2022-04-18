@@ -2,10 +2,11 @@
   "name": "@statistics-hub-oss/utilities",
   "version": "0.1.0",
   "description": "Utility modules for the bot.",
-  "main": "index.js",
+  "main": "./out/index.js",
   "typings": "./bin/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:mongodb": "node ./test/mongodb/test.js",
+    "test:queue": "node ./test/utils/queue.js",
     "compile": "tsc -p tsconfig.json",
     "check:format": "prettier --ignore-path .gitignore --write ."
   },
@@ -13,7 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sapphire/framework": "^2.4.1",
+    "@typegoose/typegoose": "^9.8.0",
     "discord-hybrid-sharding": "^1.5.3",
+    "discord.js": "^13.6.0",
+    "mongoose": "^6.3.0",
     "prettier": "^2.6.2",
     "tedis": "^0.1.12"
   },
