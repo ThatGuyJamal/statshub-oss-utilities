@@ -14,32 +14,34 @@ async function run() {
   };
 
   // Deletes any doc if it exists
-  await test._model.deleteMany({});
+  // await test._model.deleteOne({ id: Guild.id }).exec().then(() => console.log("Deleted"));
 
   // // Inserts a new doc
-  let doc = await test._model.findByIdAndUpdate(
+  await test._model.findByIdAndUpdate(
     {
       _id: Guild.id,
     },
     {
-      guild_name: Guild.name,
+      $set: {
+        guild_name: Guild.name,
       data: {
         member: {
-          guildJoins: 1,
+          guildJoins: 8,
           guildLeaves: 5,
           lastJoin: new Date(),
         },
         message: 10,
         voice: 2,
       },
+      }
     },
     {
       upsert: true,
       new: true,
     }
-  );
-
-  console.log(doc);
+  ).exec().then(doc => {
+    console.log(doc);
+  })
 }
 
 run();
